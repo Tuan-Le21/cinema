@@ -4,15 +4,15 @@ public class Main {
 
 	public static void main(String[] args) {
 		Service service = new Service();
-		Movies j = new Movies("Jumanji: Welcome to the jungle","Fantasy", "12a");
-		Movies h = new Movies("Harry Potter and the order of the pheonix", "Adventure", "PG");	
-		Movies a = new Movies("Avengers: Age of Ultron", "Action", "15");
-		Movies b = new Movies("Spectre", "Action", "18");	
+		Movies movie1 = new Movies("Jumanji: Welcome to the jungle","Fantasy", "12a");
+		Movies movie2 = new Movies("Harry Potter and the order of the pheonix", "Adventure", "PG");	
+		Movies movie3 = new Movies("Avengers: Age of Ultron", "Action", "15");
+		Movies movie4 = new Movies("Spectre", "Action", "18");	
 		
-		service.addMovies(1,j);	
-		service.addMovies(2, h);
-		service.addMovies(3, a);
-		service.addMovies(4, b);
+		service.addMovies(1,movie1);	
+		service.addMovies(2,movie2);
+		service.addMovies(3,movie3);
+		service.addMovies(4,movie4);
 
 		System.out.println(service.getMovies(1));
 		System.out.println(service.getMovies(3));
