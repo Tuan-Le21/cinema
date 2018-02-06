@@ -1,9 +1,9 @@
 
-public class movies {
+public class Movies {
 	 
-	 String name;
-	 String genre;
-	 String ageRating;
+	 private String name;
+	 private String genre;
+	 private String ageRating;
 	public String getName() {
 		return name;
 	}
@@ -22,7 +22,7 @@ public class movies {
 	public void setAgeRating(String ageRating) {
 		this.ageRating = ageRating;
 	}
-	public movies(String name, String genre, String ageRating) {
+	public Movies(String name, String genre, String ageRating) {
 		super();
 		this.name = name;
 		this.genre = genre;

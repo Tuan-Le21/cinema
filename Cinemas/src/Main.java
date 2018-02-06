@@ -3,22 +3,23 @@
 public class Main {
 
 	public static void main(String[] args) {
-		service s = new service();
-		movies j = new movies("Jumanji: Welcome to the jungle","Fantasy", "12a");
-		movies h = new movies("Harry Potter and the order of the pheonix", "Adventure", "PG");	
-		movies a = new movies("Avengers: Age of Ultron", "Action", "15");
-		movies b = new movies("Spectre", "Action", "18");
+		Service service = new Service();
+		Movies movie1 = new Movies("Jumanji: Welcome to the jungle","Fantasy", "12a");
+		Movies movie2 = new Movies("Harry Potter and the order of the pheonix", "Adventure", "PG");	
+		Movies movie3 = new Movies("Avengers: Age of Ultron", "Action", "15");
+		Movies movie4 = new Movies("Spectre", "Action", "18");	
 		
-		 
-				
-		s.addMovies(1,j);	
-		s.addMovies(2, h);
-		s.addMovies(3, a);
-		s.addMovies(4, b);
-		
-		System.out.println(s.getMovies(1));
-		System.out.println(s.getMovies(3));
+		service.addMovies(1,movie1);	
+		service.addMovies(2,movie2);
+		service.addMovies(3,movie3);
+		service.addMovies(4,movie4);
+
+		System.out.println(service.getMovies(1));
+		System.out.println(service.getMovies(3));
+		System.out.println(service.converter(3));
 	}
+	
+	
 
 
 }
