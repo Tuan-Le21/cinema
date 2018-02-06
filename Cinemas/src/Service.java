@@ -40,6 +40,17 @@ public class Service {
 		}
 		return json;
 	}
+	public int countGenre(String genre) {
+
+		int count = 0;
+		for (int i = 1; i <= moviesMap.size(); i++) {
+			if (moviesMap.get(i).getGenre().equalsIgnoreCase(genre)) {
+				count++;
+			}
+		}
+		return count;
+
+	}
 
 
 
