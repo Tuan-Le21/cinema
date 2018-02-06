@@ -16,7 +16,7 @@ public class Main {
 
 		System.out.println(service.getMovies(1));
 		System.out.println(service.getMovies(3));
-		System.out.println(service.converter());
+		System.out.println(service.converter(3));
 	}
 	
 	

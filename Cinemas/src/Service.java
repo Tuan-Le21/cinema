@@ -13,11 +13,11 @@ public class Service {
 	public  Movies getMovies(Integer x) {
 		return moviesMap.get(x);
 	}
-	public String converter() {
+	public String converter(int Y) {
 		
 		String json = null;
 		try {
-			json = new ObjectMapper().writeValueAsString(moviesMap);
+			json = new ObjectMapper().writeValueAsString(moviesMap.get(Y));
 		} catch (JsonProcessingException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
